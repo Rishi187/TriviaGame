@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <script type="text/javascript" src="javascript/app.js"></script> -->
+<style>
+    .jumbotron{
+        background-color:black;
+        color:yellow;
+    }
+</style>
+</head>
+<body>
+        <!-- <div id="time-left"></div> -->
+    <div class="container">
+            <!-- Jumbotron holds the title section -->
+            <div class="jumbotron">
+              <div class="container">
+                <center><h1>Star Wars Trivia Game</h1></center>
+                <center><h2>Answer the questions in under 2 min!</h2></center>
+                <center><small>May the Force be with you....</small></center>
+              </div>
+            </div>
+            
+    </div>
+    <div class="container">
+            <div class="jumbotron">
+            <div class="container">
+             <p id="demo"></p>
+            <div id="quiz"></div>
+            <div id="results"></div>
+            <div>Trivia ends in <span id="time">02:00</span> minutes!</div>
+            <form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+                <div align="center"><br>
+                <h4>"What is Darth Vader real name?"</h4>
+                <input id="answer1a" type="radio" name="group1" value="wrong"> Bob<br>
+                <input id="answer2a" type="radio" name="group1" value="correct" > Anakin<br>
+                <input id="answer3a" type="radio" name="group1" value="wrong"> Obi-one<br>
+                <hr>
+                <h4>"Who is Luke Skywalkers father?"</h4>
+                <input id="answer1b" type="radio" name="group2" value="wrong"> Dave<br>
+                <input id="answer2b" type="radio" name="group2" value="wrong"> Jabba<br>
+                <input id="answer3b" type="radio" name="group2" value="correct" > Anakin<br>
+                <hr>
+                <h4>"What is the name of Han Solo ship?"</h4>
+                <input id="answer1c" type="radio" name="group3" value="correct"> Millenium Falcon<br>
+                <input id="answer2c" type="radio" name="group3" value="wrong"> Enterprise<br>
+                <input id="answer3c" type="radio" name="group3" value="wrong" > Pod Racer<br>
+                <hr>
+                <h4>"Who is Darth Sidious?"</h4>
+                <input id="answer1d" type="radio" name="group4" value="correct"> Palpatine<br>
+                <input id="answer2d" type="radio" name="group4" value="wrong"> Maul<br>
+                <input id="answer3d" type="radio" name="group4" value="wrong" >Yoda<br>
+                </div>
+                </form>
+                <br>
+                <center><input type="submit" value="Submit Answers">
+            </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>

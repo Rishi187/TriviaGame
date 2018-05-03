@@ -1,0 +1,21 @@
+body {
+    position: relative;
+    color: #fff;
+    /* background:grey; */
+    background-image: url("https://images-na.ssl-images-amazon.com/images/M/MV5BODQ0NjIzNjQ3MV5BMl5BanBnXkFtZTgwMTQ3MjgyNzE@._CR187,120,1281,960_UX614_UY460._SY230_SX307_AL_.jpg ");
+} 
+#demo{
+    color:white
+
+}
+#results {
+    background: yellow;
+    padding: 10px;
+    color: grey;
+
+}
+#results span{
+    color: red;
+    font-weight: bold;
+
+}
