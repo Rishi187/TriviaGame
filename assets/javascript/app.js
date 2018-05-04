@@ -1,5 +1,45 @@
 
-alert(1)
+function submitAnswers(){
+    var total = 4;
+    var score = 0;
+
+//Get user input
+var q1 = document.forms["quizForm"]["q1"].value;
+var q2 = document.forms["quizForm"]["q2"].value;
+var q3 = document.forms["quizForm"]["q3"].value;
+var q4 = document.forms["quizForm"]["q4"].value;
+
+//validation
+
+if(q1 == null || q1 == ''){
+    alert("You missed question 1")
+    return false;
+}
+for (i = 1; i <= total; i++){
+    if(eval('q' +i) == null || eval('q'+i) == ''){
+        alert("You missed question" + i);
+        return false;
+    }
+    
+ }
+ //set correct answers
+ var answers = ["b", "c", "a", "a"];
+
+ //Check answers
+ for (i = 1; i <= total; i++){
+    if(eval('q' +i)  == answers [i - 1]){
+    score++;
+    }
+ }
+
+ //Display results 
+ var results = document.getElementById('results');
+ results.innerHTML = '<h3> You scored <span> ' +score+'</span> out of <span>'+total+'</span></h3>'
+
+ alert('You scored ' +score+' out of ' +total);
+
+ return false;
+}
   
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
@@ -24,51 +64,8 @@ jQuery(function ($) {
     startTimer(twoMinutes, display);
 });
 
-$(document).ready(function () {
-    var allQuestions = [
-        {
-            question: "What is Darth Vader real name?", 
-            choices: ["Bob", "Anakin", "Obi-one"],
-            correctAnswer: 2,
-            photo: "assets/images/Anakin.jpg"
-         },
-         {
-             question: "Who is Luke Skywalkers father?", 
-            choices: ["Dave", "Jabba", "Anakin"],
-            correctAnswer: 3,
-            photo: "assets/images/darthvader.jpg"
-         }, 
-         {
-             question: "What is the name of Han Solo ship?", 
-            choices: ["Millenium Falcon", "Enterprise", "Podracer"],
-            correctAnswer: 1,
-            photo: "assets/images/millennium.jpg"
-        }, 
-        {
-            question: "Who is Darth Sidious?", 
-            choices: ["Palpatine", "Maul", "Yoda"],
-            correctAnswer: 1,
-            photo: "assets/images/Emperor.png"
-        }]
-    }
-    
-        
-        // var currentquestion = 0;
-        // var correctAnswers = 0;
-function handleClick()
-  {         
-var amountCorrect = 0;          
-for(var i = 1; i <= 45; i++) {
-  var radios = document.getElementsByName('group'+i);
-  for(var j = 0; j < radios.length; j++) {
-    var radio = radios[j];
-    if(radio.value == "correct" && radio.checked) {
-      amountCorrect++;
-    }
-  }
- }                   
-    alert("Correct Responses: " + amountCorrect);
-  }
-        
+ 
+
+
         
        

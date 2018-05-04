@@ -36,31 +36,31 @@
             <div id="quiz"></div>
             <div id="results"></div>
             <div>Trivia ends in <span id="time">02:00</span> minutes!</div>
-            <form name="myform" action="http://www.mydomain.com/myformhandler.cgi" method="POST">
+            <form name="quizForm" onsubmit="return submitAnswers()">
                 <div align="center"><br>
                 <h4>"What is Darth Vader real name?"</h4>
-                <input id="answer1a" type="radio" name="group1" value="wrong"> Bob<br>
-                <input id="answer2a" type="radio" name="group1" value="correct" > Anakin<br>
-                <input id="answer3a" type="radio" name="group1" value="wrong"> Obi-one<br>
+                <input id="q1a" type="radio" name="q1" value="a"> Bob &lt;script&gt;<br>
+                <input id="q1b" type="radio" name="q1" value="b" > Anakin &lt;script&gt;<br>
+                <input id="q1c" type="radio" name="q1" value="c"> Obi-one &lt;script&gt;<br>
                 <hr>
                 <h4>"Who is Luke Skywalkers father?"</h4>
-                <input id="answer1b" type="radio" name="group2" value="wrong"> Dave<br>
-                <input id="answer2b" type="radio" name="group2" value="wrong"> Jabba<br>
-                <input id="answer3b" type="radio" name="group2" value="correct" > Anakin<br>
+                <input id="q2a" type="radio" name="q2" value="a"> Dave &lt;script&gt;<br>
+                <input id="q2b" type="radio" name="q2" value="b"> Jabba &lt;script&gt;<br>
+                <input id="q2c" type="radio" name="q2" value="c" > Anakin &lt;script&gt;<br>
                 <hr>
                 <h4>"What is the name of Han Solo ship?"</h4>
-                <input id="answer1c" type="radio" name="group3" value="correct"> Millenium Falcon<br>
-                <input id="answer2c" type="radio" name="group3" value="wrong"> Enterprise<br>
-                <input id="answer3c" type="radio" name="group3" value="wrong" > Pod Racer<br>
+                <input id="q3a" type="radio" name="q3" value="a"> Millenium Falcon &lt;script&gt;<br>
+                <input id="q3b" type="radio" name="q3" value="b"> Enterprise &lt;script&gt;<br>
+                <input id="q3c" type="radio" name="q3" value="c" > Pod Racer &lt;script&gt;<br>
                 <hr>
                 <h4>"Who is Darth Sidious?"</h4>
-                <input id="answer1d" type="radio" name="group4" value="correct"> Palpatine<br>
-                <input id="answer2d" type="radio" name="group4" value="wrong"> Maul<br>
-                <input id="answer3d" type="radio" name="group4" value="wrong" >Yoda<br>
+                <input id="q4a" type="radio" name="q4" value="a"> Palpatine &lt;script&gt;<br>
+                <input id="q4b" type="radio" name="q4" value="b"> Maul &lt;script&gt;<br>
+                <input id="q4c" type="radio" name="q4" value="c" >Yoda &lt;script&gt;<br>
                 </div>
-                </form>
                 <br>
                 <center><input type="submit" value="Submit Answers">
+                </form>
             </div>
     </div>
 
